@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiny Wings 🐦</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game"></canvas>
+      <div id="hud">
+        <div class="hud-item" id="score">0 m</div>
+        <div class="hud-item" id="lives">❤️❤️❤️</div>
+        <div class="hud-item" id="combo"></div>
+        <div class="hud-item" id="fever"></div>
+      </div>
+      <div id="menu" class="overlay">
+        <h1>🐦 Tiny Wings</h1>
+        <p class="tag">Glide the hills. Catch the sun.</p>
+        <div class="instructions">
+          <div><span class="key">HOLD</span> Space / Click to dive</div>
+          <div><span class="key">RELEASE</span> to glide & leap</div>
+          <div>Perfect takeoffs = 🔥 Fever · Dive on enemies to KO them!</div>
+          <div>❤️ You have <b>3 lives</b> · Hits stun you briefly (3s shield)</div>
+        </div>
+        <div class="powerup-legend">
+          <div><b>⭐</b> Star — Boost</div>
+          <div><b>🌶️</b> Chili — Speed</div>
+          <div><b>🪶</b> Feather — Glide</div>
+          <div><b>🛡️</b> Shield — Protect</div>
+          <div><b>🪙</b> Coin — Fever</div>
+        </div>
+        <button id="startBtn">Start Flight</button>
+        <div class="best">Best: <span id="bestScore">0</span> m</div>
+      </div>
+      <div id="gameover" class="overlay hidden">
+        <h1>Nice Flight!</h1>
+        <div class="stats">
+          <div>Distance: <span id="finalScore">0</span> m</div>
+          <div>Best: <span id="finalBest">0</span> m</div>
+          <div>Perfect Slides: <span id="finalPerfects">0</span></div>
+        </div>
+        <button id="restartBtn">Fly Again</button>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
+
