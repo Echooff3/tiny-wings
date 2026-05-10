@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "esbuild ./src/main.ts --bundle --outfile=./src/main.js --platform=browser --format=iife --target=es2020",
-    "watch": "esbuild ./src/main.ts --bundle --outfile=./src/main.js --platform=browser --format=iife --target=es2020 --watch"
+    "watch": "esbuild ./src/main.ts --bundle --outfile=./src/main.js --platform=browser --format=iife --target=es2020 --watch",
+    "serve": "python3 -m http.server 8080 --bind 0.0.0.0"
   },
   "dependencies": {
     "three": "^0.176.0"

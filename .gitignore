@@ -5,8 +5,8 @@ node_modules/
 .bun/
 
 # Build (esbuild writes ./src/main.js from ./src/main.ts)
-/src/main.js
-/src/main.js.map
+#/src/main.js
+#/src/main.js.map
 
 # Environment
 .env
